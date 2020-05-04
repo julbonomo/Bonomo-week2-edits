@@ -30,23 +30,12 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/carrots.jpg": {
+	"/deploy/img/footer/standpeople.jpg": {
 		"ft": 16384,
-		"iS": 967990,
+		"iS": 58420,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/carrots.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/footer/image6.jpg": {
-		"ft": 16384,
-		"iS": 532900,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/footer/image6.jpg",
+		"oAP": "/deploy/img/footer/standpeople.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -96,12 +85,12 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/section5/streetfair.jpg": {
+	"/deploy/img/section5/street.jpg": {
 		"ft": 16384,
 		"iS": 243616,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/section5/streetfair.jpg",
+		"oAP": "/deploy/img/section5/street.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -203,20 +192,20 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/dev/footer.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/footer.html",
-		"oF": 0
-		},
 	"/dev/footer.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/footer.html",
+		"oF": 0
+		},
+	"/dev/header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/header.html",
 		"oF": 0
 		},
 	"/dev/index.kit": {
@@ -368,6 +357,71 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/sections/_section1.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section1.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_section2.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section2.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_section3.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section3.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_section4.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section4.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_section5.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section5.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -381,28 +435,12 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/dev/section1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/section1.html",
-		"oF": 0
-		},
 	"/dev/section1.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section1.html",
-		"oF": 0
-		},
-	"/dev/section2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/section2.html",
 		"oF": 0
 		},
 	"/dev/section2.kit": {
@@ -413,28 +451,12 @@
 		"oAP": "/dev/section2.html",
 		"oF": 0
 		},
-	"/dev/section3.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/section3.html",
-		"oF": 0
-		},
 	"/dev/section3.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section3.html",
-		"oF": 0
-		},
-	"/dev/section4.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/section4.html",
 		"oF": 0
 		},
 	"/dev/section4.kit": {
@@ -445,20 +467,20 @@
 		"oAP": "/dev/section4.html",
 		"oF": 0
 		},
-	"/dev/section5.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/section5.html",
-		"oF": 0
-		},
 	"/dev/section5.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/section5.html",
+		"oF": 0
+		},
+	"/dev/week4 -edits.code-workspace": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/week4 -edits.code-workspace",
 		"oF": 0
 		},
 	"/README.md": {

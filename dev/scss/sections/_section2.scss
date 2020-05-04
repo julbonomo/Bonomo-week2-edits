@@ -1,0 +1,21 @@
+/* =============
+    section 2
+============= */ 
+#section2{
+    aside{
+        img{
+            width: 100%;
+        }
+    }
+
+    #section2-right {
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas: ". section2 .";
+    }
+    
+
+    >div {
+        grid-area: section2;
+    }
+}
