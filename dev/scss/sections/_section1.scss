@@ -2,11 +2,10 @@
     section 3
 ============= */ 
 #section1{
-   
+   img{
+       background-image: url('../img/section1/carrots.jpg');
+       background-size: cover;
+       background-position: center; 
 
-    >div {
-        img{
-            width: 100%
-        }
-    }
+   }
 }

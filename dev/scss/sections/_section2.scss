@@ -2,20 +2,37 @@
     section 2
 ============= */ 
 #section2{
-    aside{
-        img{
-            width: 100%;
-        }
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-areas: ". section2-container .";
+ 
+    @indlude xl{
+        grid-template-columns: auto 1200px auto; 
     }
-
-    #section2-right {
-        display: grid;
-        grid-template-columns: 15px auto 15px;
-        grid-template-areas: ". section2 .";
+    section{
+        grid-area: section2-container
     }
-    
-
     >div {
-        grid-area: section2;
+        grid-area: section2; 
+
+        #section2-first{
+            @include md{
+                display: grid;
+                grid-template-columns: 20% auto 20%
+                grid-template-areas: ". section2-first .";
+            }
+            >div {
+                @include md{
+                    grid-area: section2-first;
+                }
+                 h2{
+                 color: $Orange; 
+                }
+                
+                img {
+                    width: 100%
+                }
+            }
+        }
     }
 }

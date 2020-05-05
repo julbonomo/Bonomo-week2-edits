@@ -347,6 +347,13 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". footer ."; }
+  #footer > div {
+    grid-area: footer; }
+
 /* =============
     section 3
 ============= */
@@ -356,17 +363,22 @@ textarea {
 /* =============
     section 2
 ============= */
-#section2 aside img {
-  width: 100%; }
-
-#section2 #section2-right {
+#section2 {
   display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". section2 ."; }
+  grid-template-columns: 20px auto 20px;
+  grid-template-areas: ". section2-container ."; }
 
-#section2 > div {
-  grid-area: section2; }
-
+@indlude xl {
+  #section2 {
+    grid-template-columns: auto 1200px auto; } }
+  #section2 section {
+    grid-area: section2-container; }
+  #section2 > div {
+    grid-area: section2; }
+    @media (min-width: 768px) {
+      #section2 > div #section2first {
+        display: grid;
+        grid-template-columns: 20%; } }
 /* =============
     section 3
 ============= */
@@ -382,7 +394,19 @@ textarea {
 ============= */
 #section4 {
   display: grid;
-  grid-template-columns: 15px auto 15px;
+  grid-template-columns: 50px auto 50px;
   grid-template-areas: ". section4."; }
   #section4 #section4-content {
     grid-area: section4; }
+
+/* =============
+    section 5
+============= */
+#section5 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section3 ."; }
+  #section5 > div {
+    grid-area: section5;
+    display: grid;
+    grid-gap: 20px; }

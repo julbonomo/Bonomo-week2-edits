@@ -1,0 +1,15 @@
+/* =============
+    section 5
+============= */ 
+
+#section5{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section3 .";
+
+    >div {
+        grid-area: section5;
+        display: grid;
+        grid-gap: 20px; 
+    }
+}

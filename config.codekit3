@@ -41,6 +41,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/section1/carrots.jpg": {
+		"ft": 16384,
+		"iS": 45101,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section1/carrots.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/deploy/img/section2/vegstand.jpg": {
 		"ft": 16384,
 		"iS": 223635,
