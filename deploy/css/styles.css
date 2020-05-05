@@ -357,35 +357,52 @@ textarea {
 /* =============
     section 3
 ============= */
-#section1 > div img {
-  width: 100%; }
-
+#section1 {
+  background-image: url("../img/section1/carrots.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 360px; }
+  @media (min-width: 768px) {
+    #section1 {
+      height: 260px; } }
 /* =============
     section 2
 ============= */
 #section2 {
   display: grid;
-  grid-template-columns: 20px auto 20px;
-  grid-template-areas: ". section2-container ."; }
-
-@indlude xl {
-  #section2 {
-    grid-template-columns: auto 1200px auto; } }
-  #section2 section {
-    grid-area: section2-container; }
+  grid-template-columns: 40px auto 40px;
+  grid-template-areas: ". section2 .";
+  padding: 60px 0; }
+  @media (min-width: 992px) {
+    #section2 {
+      padding: 100px 0; } }
+  @media (min-width: 1200px) {
+    #section2 {
+      grid-template-columns: auto 1200px auto; } }
   #section2 > div {
     grid-area: section2; }
     @media (min-width: 768px) {
-      #section2 > div #section2first {
+      #section2 > div #section2-first {
         display: grid;
-        grid-template-columns: 20%; } }
+        grid-template-columns: 20% auto 20%;
+        grid-template-areas: ". section2-first .";
+        padding: 60px 0; } }
+    @media (min-width: 768px) {
+      #section2 > div #section2-first > div {
+        grid-area: section2-first; } }
+    #section2 > div #section2-first > div h2 {
+      color: #D87337; }
+    #section2 > div #section2-first > div p {
+      color: #D87337; }
+
 /* =============
     section 3
 ============= */
 #section3 {
   display: grid;
   grid-template-columns: 30px auto 30px;
-  grid-template-areas: ". section3 ."; }
+  grid-template-areas: ". section3 .";
+  padding: 80px 0; }
   #section3 > div {
     grid-area: section3; }
 
@@ -395,7 +412,8 @@ textarea {
 #section4 {
   display: grid;
   grid-template-columns: 50px auto 50px;
-  grid-template-areas: ". section4."; }
+  grid-template-areas: ". section4.";
+  color: #D87337; }
   #section4 #section4-content {
     grid-area: section4; }
 
@@ -404,8 +422,9 @@ textarea {
 ============= */
 #section5 {
   display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". section3 ."; }
+  grid-template-columns: 0px auto 0px;
+  grid-template-areas: ". section5 .";
+  padding: 0px 0; }
   #section5 > div {
     grid-area: section5;
     display: grid;

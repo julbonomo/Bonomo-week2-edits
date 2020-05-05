@@ -3,35 +3,38 @@
 ============= */ 
 #section2{
     display: grid;
-    grid-template-columns: 20px auto 20px;
-    grid-template-areas: ". section2-container .";
+    grid-template-columns: 40px auto 40px;
+    grid-template-areas: ". section2 .";
+    padding: 60px 0;
  
-    @indlude xl{
+    @include lg{
+        padding: 100px 0;
+    }
+    @include xl{
         grid-template-columns: auto 1200px auto; 
     }
-    section{
-        grid-area: section2-container
-    }
+
     >div {
         grid-area: section2; 
 
         #section2-first{
             @include md{
                 display: grid;
-                grid-template-columns: 20% auto 20%
+                grid-template-columns: 20% auto 20%;
                 grid-template-areas: ". section2-first .";
+                padding: 60px 0;
             }
             >div {
                 @include md{
                     grid-area: section2-first;
                 }
                  h2{
-                 color: $Orange; 
+                    color: $Orange; 
+                }
+                p{
+                    color: $Orange;
                 }
                 
-                img {
-                    width: 100%
-                }
             }
         }
     }

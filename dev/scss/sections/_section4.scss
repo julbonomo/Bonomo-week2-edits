@@ -5,7 +5,7 @@
         display: grid;
         grid-template-columns:50px auto 50px;
         grid-template-areas: ". section4.";
-
+        color: $Orange; 
         #section4-content{
             grid-area: section4;
         }

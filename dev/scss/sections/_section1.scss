@@ -2,10 +2,12 @@
     section 3
 ============= */ 
 #section1{
-   img{
        background-image: url('../img/section1/carrots.jpg');
        background-size: cover;
        background-position: center; 
+       height: 360px;
 
-   }
+       @include md{
+           height: 260px;
+       }
 }

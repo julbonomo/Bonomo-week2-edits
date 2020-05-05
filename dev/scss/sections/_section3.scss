@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 30px auto 30px;
     grid-template-areas: ". section3 .";
-
+    padding: 80px 0;
     >div {
         grid-area: section3;
     }
