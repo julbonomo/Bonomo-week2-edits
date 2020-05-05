@@ -107,17 +107,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/section6/last stand pic.jpg": {
-		"ft": 16384,
-		"iS": 58420,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/section6/last stand pic.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/deploy/img/section6/standpeople.jpg": {
 		"ft": 16384,
 		"iS": 58420,
@@ -126,7 +115,7 @@
 		"oAP": "/deploy/img/section6/standpeople.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/index.html": {
@@ -508,14 +497,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section5.html",
-		"oF": 0
-		},
-	"/dev/section6.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/section6.html",
 		"oF": 0
 		},
 	"/dev/section6.kit": {
