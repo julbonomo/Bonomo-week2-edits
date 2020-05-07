@@ -1,13 +1,19 @@
 /* =============
-    section 3
+    section 1
 ============= */ 
 #section1{
+       height: 370px; 
        background-image: url('../img/section1/carrots.jpg');
        background-size: cover;
        background-position: center; 
        height: 360px;
+       color: $white; 
 
        @include md{
-           height: 260px;
+           height: 254px;
+       }
+
+       @include xl{
+           height: 254px; 
        }
 }

@@ -2,11 +2,64 @@
     section 2
 ============= */ 
 #section2{
-    display: grid;
-    grid-template-columns: 40px auto 40px;
-    grid-template-areas: ". section2 .";
-    padding: 60px 0;
- 
+    padding-bottom: 32px; 
+
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section2-container .";
+    }
+
+    #section2-container{
+        
+        @include md{
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-template-areas: "section2-image section2";
+            padding: 90px 0;
+        }
+
+        @include xl{
+            grid-area: section2-container; 
+        }
+
+        section{
+            margin: 60px 0;
+            @include md{
+                margin: 0;
+            }
+
+            #section2-content{
+                padding: 0 30px;
+                grid-area: section2-content; 
+            }
+        }
+        aside{
+            background-image: url("../img/section2/vegstand.jpg");
+            background-size: cover;
+            height: 480px; 
+            @include md{
+                grid-area: section2-image;
+                height: 379px
+            }
+            @include lg{
+                height: 650px; 
+            }
+            @include xl{
+                height: 740px;
+            }
+
+        }
+
+    }
+
+
+
+
+
+
+
+    
     @include lg{
         padding: 100px 0;
     }

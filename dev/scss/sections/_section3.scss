@@ -2,11 +2,24 @@
     section 3
 ============= */ 
 #section3{
-    display: grid;
-    grid-template-columns: 30px auto 30px;
-    grid-template-areas: ". section3 .";
-    padding: 80px 0;
-    >div {
-        grid-area: section3;
+    height: 387px;
+    background-image: url('..img/section3/berries.jpg');
+    background-position: center; 
+    background-size: cover;
+
+    @include md{
+        height: 575px;
+    }
+    @include lg{
+        height: 800px 
+    }
+    @include xl{
+        height: 682px 
     }
 }
+
+   
+   
+
+
+ 

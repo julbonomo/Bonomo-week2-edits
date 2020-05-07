@@ -3,10 +3,26 @@
 ============= */ 
 #section4 {
         display: grid;
-        grid-template-columns:50px auto 50px;
+        grid-template-columns:15px auto 15px;
         grid-template-areas: ". section4.";
+        padding: 80px 0px;
+        text-align: center;
         color: $Orange; 
-        #section4-content{
+        @include md{
+            grid-template-columns: auto 70% auto;
+        }
+
+        @include xl{
+            grid-template-columns: auto 650px auto;
+        }
+
+        >div{
             grid-area: section4;
+
+            hr{
+                border: none;
+                height: 2px;
+                background-color: $Orange;
+            }
         }
 }

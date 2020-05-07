@@ -355,24 +355,62 @@ textarea {
     grid-area: footer; }
 
 /* =============
-    section 3
+    section 1
 ============= */
 #section1 {
+  height: 370px;
   background-image: url("../img/section1/carrots.jpg");
   background-size: cover;
   background-position: center;
-  height: 360px; }
+  height: 360px;
+  color: #fff; }
   @media (min-width: 768px) {
     #section1 {
-      height: 260px; } }
+      height: 254px; } }
+  @media (min-width: 1200px) {
+    #section1 {
+      height: 254px; } }
 /* =============
     section 2
 ============= */
 #section2 {
-  display: grid;
-  grid-template-columns: 40px auto 40px;
-  grid-template-areas: ". section2 .";
-  padding: 60px 0; }
+  padding-bottom: 32px; }
+  @media (min-width: 1200px) {
+    #section2 {
+      display: grid;
+      grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". section2-container ."; } }
+  @media (min-width: 768px) {
+    #section2 #section2-container {
+      display: grid;
+      grid-template-columns: 40% auto;
+      grid-template-areas: "section2-image section2";
+      padding: 90px 0; } }
+  @media (min-width: 1200px) {
+    #section2 #section2-container {
+      grid-area: section2-container; } }
+  #section2 #section2-container section {
+    margin: 60px 0; }
+    @media (min-width: 768px) {
+      #section2 #section2-container section {
+        margin: 0; } }
+    #section2 #section2-container section #section2-content {
+      padding: 0 30px;
+      grid-area: section2-content; }
+  #section2 #section2-container aside {
+    background-image: url("../img/section2/vegstand.jpg");
+    background-size: cover;
+    height: 480px; }
+    @media (min-width: 768px) {
+      #section2 #section2-container aside {
+        grid-area: section2-image;
+        height: 379px; } }
+    @media (min-width: 992px) {
+      #section2 #section2-container aside {
+        height: 650px; } }
+    @media (min-width: 1200px) {
+      #section2 #section2-container aside {
+        height: 740px; } }
   @media (min-width: 992px) {
     #section2 {
       padding: 100px 0; } }
@@ -399,33 +437,79 @@ textarea {
     section 3
 ============= */
 #section3 {
-  display: grid;
-  grid-template-columns: 30px auto 30px;
-  grid-template-areas: ". section3 .";
-  padding: 80px 0; }
-  #section3 > div {
-    grid-area: section3; }
-
+  height: 387px;
+  background-image: url("..img/section3/berries.jpg");
+  background-position: center;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    #section3 {
+      height: 575px; } }
+  @media (min-width: 992px) {
+    #section3 {
+      height: 800px; } }
+  @media (min-width: 1200px) {
+    #section3 {
+      height: 682px; } }
 /* =============
     section 4
 ============= */
 #section4 {
   display: grid;
-  grid-template-columns: 50px auto 50px;
+  grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section4.";
+  padding: 80px 0px;
+  text-align: center;
   color: #D87337; }
-  #section4 #section4-content {
+  @media (min-width: 768px) {
+    #section4 {
+      grid-template-columns: auto 70% auto; } }
+  @media (min-width: 1200px) {
+    #section4 {
+      grid-template-columns: auto 650px auto; } }
+  #section4 > div {
     grid-area: section4; }
+    #section4 > div hr {
+      border: none;
+      height: 2px;
+      background-color: #D87337; }
 
 /* =============
     section 5
 ============= */
-#section5 {
-  display: grid;
-  grid-template-columns: 0px auto 0px;
-  grid-template-areas: ". section5 .";
-  padding: 0px 0; }
-  #section5 > div {
-    grid-area: section5;
+@media (min-width: 1200px) {
+  #section5 {
     display: grid;
-    grid-gap: 20px; }
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". section5. "; } }
+
+#section5 ul {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-rows: repeat(2, 200px); }
+  @media (min-width: 768px) {
+    #section5 ul {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 750px);
+      grid-template-areas: "street" "farm crops" "tomatoes"; } }
+  @media (min-width: 1200px) {
+    #section5 ul {
+      grid-area: section5; } }
+  #section5 ul li {
+    background-position: center;
+    background-size: cover; }
+  #section5 ul #street {
+    background-image: url("../img/section5/street/.jpg"); }
+    @media (min-width: 768px) {
+      #section5 ul #street {
+        grid-area: street;
+        background-position: center top; } }
+  #section5 ul #farmcrops {
+    background-image: url("img/section5/farmcrops/.jpg"); }
+    @media (min-width: 768px) {
+      #section5 ul #farmcrops {
+        grid-area: farmcrops; } }
+  #section5 ul #tomatoes {
+    background-image: url("../img/section5/tomatoes.jpg"); }
+    @media (min-width: 768px) {
+      #section5 ul #tomatoes {
+        grid-area: tomatoes; } }
