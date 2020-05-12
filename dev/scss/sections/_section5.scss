@@ -7,21 +7,21 @@
     @include xl{
         display: grid;
         grid-template-columns: auto 1200px auto;
-        grid-template-areas: ". section5. ";
+        grid-template-areas: ". section5 . ";
     }
 
     ul{
         display: grid; 
         grid-gap: 30px;
-        grid-template-rows: repeat(2, 200px);
+        grid-template-rows: repeat(3, 296px);
 
         @include md{
             grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(3, 750px);
+            grid-template-rows: repeat(3, 340px);
             grid-template-areas: 
-            "street"
-            "farm crops"
-            "tomatoes";
+            "street street"
+            "street street"
+            "farmcrops tomatoes";
         }
 
         @include xl{
@@ -34,14 +34,14 @@
         }
 
         #street{
-            background-image: url("../img/section5/street/.jpg");
+            background-image: url("../img/section5/street.jpg");
             @include md{
                 grid-area: street;
                 background-position: center top;
             }
         }
         #farmcrops{
-            background-image: url("img/section5/farmcrops/.jpg");
+            background-image: url("../img/section5/farmcrops.jpg");
             @include md{
                 grid-area: farmcrops;
             }

@@ -1,3 +1,11 @@
 /* =============
     Typography
 ============= */
+body{ 
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+p{
+    line-height: 20px;
+    font-size: rem-calc(16);
+}

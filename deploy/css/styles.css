@@ -317,9 +317,22 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    list-style: none; }
+
 /* =============
     Typography
 ============= */
+body {
+  font-family: 'Noto Sans JP', sans-serif; }
+
+p {
+  line-height: 20px;
+  font-size: 1rem; }
+
 /* =============
     Buttons
 ============= */
@@ -341,9 +354,66 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+  text-align: right; }
+  @media (min-width: 992px) {
+    #nav-container ul {
+      display: flex;
+      justify-content: flex-end; } }
+  #nav-container ul li {
+    margin-bottom: 20px; }
+    @media (min-width: 992px) {
+      #nav-container ul li {
+        align-items: center;
+        display: flex;
+        margin: 0 30px 0 0; } }
+    #nav-container ul li a:link,
+    #nav-container ul li a:visited {
+      color: #D87337;
+      text-decoration: none; }
+    #nav-container ul li a:hover,
+    #nav-container ul li a:active {
+      color: #000; }
+
 /* =============
     Header
 ============= */
+header {
+  background-color: #fff;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  header > div {
+    display: grid;
+    grid-template-areas: "logo burger" "nav nav";
+    grid-template-columns: 80% auto; }
+    header > div section {
+      padding: 20px; }
+      header > div section i {
+        color: #D87337; }
+    header > div #logo-container {
+      grid-area: logo; }
+    header > div #burger-container {
+      align-items: center;
+      display: flex;
+      grid-area: burger;
+      justify-content: flex-end;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #burger-container {
+          display: none; } }
+      header > div #burger-container i {
+        cursor: pointer; }
+    header > div #nav-container {
+      background-color: #C5C3C6;
+      grid-area: nav;
+      display: none;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #nav-container {
+          display: block; } }
 /* =============
     Footer
 ============= */
@@ -456,7 +526,7 @@ textarea {
 #section4 {
   display: grid;
   grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". section4.";
+  grid-template-areas: ". section4 .";
   padding: 80px 0px;
   text-align: center;
   color: #D87337; }
@@ -480,17 +550,17 @@ textarea {
   #section5 {
     display: grid;
     grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". section5. "; } }
+    grid-template-areas: ". section5 . "; } }
 
 #section5 ul {
   display: grid;
   grid-gap: 30px;
-  grid-template-rows: repeat(2, 200px); }
+  grid-template-rows: repeat(3, 296px); }
   @media (min-width: 768px) {
     #section5 ul {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 750px);
-      grid-template-areas: "street" "farm crops" "tomatoes"; } }
+      grid-template-rows: repeat(3, 340px);
+      grid-template-areas: "street street" "street street" "farmcrops tomatoes"; } }
   @media (min-width: 1200px) {
     #section5 ul {
       grid-area: section5; } }
@@ -498,13 +568,13 @@ textarea {
     background-position: center;
     background-size: cover; }
   #section5 ul #street {
-    background-image: url("../img/section5/street/.jpg"); }
+    background-image: url("../img/section5/street.jpg"); }
     @media (min-width: 768px) {
       #section5 ul #street {
         grid-area: street;
         background-position: center top; } }
   #section5 ul #farmcrops {
-    background-image: url("img/section5/farmcrops/.jpg"); }
+    background-image: url("../img/section5/farmcrops.jpg"); }
     @media (min-width: 768px) {
       #section5 ul #farmcrops {
         grid-area: farmcrops; } }

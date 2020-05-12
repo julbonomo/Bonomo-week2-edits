@@ -4,7 +4,7 @@
 #section4 {
         display: grid;
         grid-template-columns:15px auto 15px;
-        grid-template-areas: ". section4.";
+        grid-template-areas: ". section4 .";
         padding: 80px 0px;
         text-align: center;
         color: $Orange; 
